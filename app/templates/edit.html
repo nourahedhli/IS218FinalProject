@@ -1,46 +1,57 @@
 {% extends "layout.html" %}
 {% block content %}
-<form action="/edit/{{city.id}}" method="post">
+<form action="/edit/{{grad.id}}" method="post">
     <div class="row">
         <div class="col">
-            <label for="fldName">City Name</label>
-            <input id="fldName" type="text" class="form-control" placeholder="City Name" name="fldName" value="{{city.fldName}}">
+            <label for="Last_name">Last Name</label>
+            <input id="Last_name" type="text" class="form-control" placeholder="Last Name" name="Last_name" value="{{grad.Last_name}}">
         </div>
         <div class="col">
-            <label for="fldAbbreviation">City Abbreviation</label>
-            <input id="fldAbbreviation" type="text" class="form-control" placeholder="City Abbreviation"
-                   name="fldAbbreviation" value="{{city.fldAbbreviation}}">
+            <label for="First_name">Last Name</label>
+            <input id="First_name" type="text" class="form-control" placeholder="First Name" name="First_name" value="{{grad.First_name}}">
         </div>
         <div class="col">
-            <label for="fldCountry">City Country</label>
-            <input id="fldCountry" type="text" class="form-control" placeholder="City Country" name="fldCountry" value="{{city.fldCountry}}">
+            <label for="SSN">SSN</label>
+            <input id="SSN" type="text" class="form-control" placeholder="SSN" name="SSN" value="{{grad.SSN}}">
         </div>
     </div>
 
     <div class="row">
         <div class="col">
-            <label for="fldLat">City Latitude</label>
-            <input id="fldLat" type="text" class="form-control" placeholder="City Latitude" name="fldLat" value="{{city.fldLat}}">
+            <label for="Test1">Test1</label>
+            <input id="Test1" type="text" class="form-control" placeholder="Test 1" name="Test1" value="{{grad.Test1}}">
         </div>
         <div class="col">
-            <label for="fldlong">City Longitude</label>
-            <input id="fldlong" type="text" class="form-control" placeholder="City Longitude" name="fldLong" value="{{city.fldLong}}">
+            <label for="Test2">Test2</label>
+            <input id="Test2" type="text" class="form-control" placeholder="Test 2" name="Test2" value="{{grad.Test2}}">
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <label for="fldCapitalStatus">Capital Status</label>
+            <label for="Test3">Test3</label>
 
-            <input id="fldCapitalStatus" type="text" class="form-control" placeholder="Capital Status"
-                   name="fldCapitalStatus" value="{{city.fldCapitalStatus}}">
+            <input id="Test3" type="text" class="form-control" placeholder="Test 3" name="Test3" value="{{grad.Test3}}">
         </div>
-        <div class="col">
-            <label for="fldPopulation">City Population</label>
-            <input id="fldPopulation" type="text" class="form-control" placeholder="Population" name="fldPopulation" value="{{city.fldPopulation}}">
+
+          <div class="col">
+            <label for="Test4">Test4</label>
+
+            <input id="Test4" type="text" class="form-control" placeholder="Test 4" name="Test4" value="{{grad.Test4}}">
+        </div>
+          <div class="col">
+            <label for="Final">Final</label>
+
+            <input id="Final" type="text" class="form-control" placeholder="Final" name="Final" value="{{grad.Final}}">
+        </div>
+          <div class="col">
+            <label for="Grade">Grade</label>
+
+            <input id="Grade" type="text" class="form-control" placeholder="Grade" name="Grade" value="{{grad.Grade}}">
         </div>
     </div>
+
     <button type="submit" class="btn btn-success">Save</button>
+
 
 </form>
 {% endblock %}
-
