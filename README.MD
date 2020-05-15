@@ -17,18 +17,21 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 ## New Record Screenshot
 ![pycharm data query](screenshots/Adding.png)
-#
+
+### Result
 ![pycharm data query](screenshots/AddedBrowser.png)
 
 
 ## Edited Screenshot
 ![pycharm data query](screenshots/NowEddited.png)
-#
+
+### Result 
 ![pycharm data query](screenshots/EditingBrowser.png)
 
 ## Delete Screenshot
 ![pycharm data query](screenshots/Eddited.png)
-#
+
+### Result
 ![pycharm data query](screenshots/DeletingBrowser.png)
 
 
@@ -36,12 +39,10 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 
 ## Postman Listing
-
 ![pycharm data query](screenshots/PostManListing.png)
 
 
 ## Postman Post
-
 ![pycharm data query](screenshots/Post.png)
 
 ### Result 
@@ -49,18 +50,16 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 
 ## Postman Put   (Grade from A  to an F )
-
 ![pycharm data query](screenshots/Put.png)
 
 ### Result  (Grade from A  to an F )
 ![pycharm data query](screenshots/PutResult.png)
 
-#
+
 
 ## Postman Delete
 
 ![pycharm data query](screenshots/Delete.png)
 
 ### Result
-
 ![pycharm data query](screenshots/DeleteResult.png)
