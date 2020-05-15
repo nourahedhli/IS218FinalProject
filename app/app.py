@@ -36,7 +36,7 @@ def record_view(grad_id):
 @app.route('/edit/<int:grad_id>', methods=['GET'])
 def form_edit_get(grad_id):
     cursor = mysql.get_db().cursor()
-    cursor.execute('SELECT * FROM tblGrades WHERE id=%s', grad_id)
+    cursor.execute('SELECT * FROM tblGrades  WHERE id=%s', grad_id)
     result = cursor.fetchall()
     return render_template('edit.html', title='Edit Form', grad=result[0])
 
@@ -77,7 +77,7 @@ def form_insert_post():
 @app.route('/delete/<int:grad_id>', methods=['POST'])
 def form_delete_post(grad_id):
     cursor = mysql.get_db().cursor()
-    sql_delete_query = """DELETE FROM tblGrades WHERE id = %s """
+    sql_delete_query = """DELETE FROM tblGrades  WHERE id = %s """
     cursor.execute(sql_delete_query, grad_id)
     mysql.get_db().commit()
     return redirect("/", code=302)
@@ -86,7 +86,7 @@ def form_delete_post(grad_id):
 @app.route('/api/v1/grade', methods=['GET'])
 def api_browse() -> str:
     cursor = mysql.get_db().cursor()
-    cursor.execute('SELECT * FROM tblGrades')
+    cursor.execute('SELECT * FROM tblGrades ')
     result = cursor.fetchall()
     json_result = json.dumps(result);
     resp = Response(json_result, status=200, mimetype='application/json')
@@ -96,7 +96,7 @@ def api_browse() -> str:
 @app.route('/api/v1/grade/<int:grad_id>', methods=['GET'])
 def api_retrieve(grad_id) -> str:
     cursor = mysql.get_db().cursor()
-    cursor.execute('SELECT * FROM tblGrades WHERE id=%s', grad_id)
+    cursor.execute('SELECT * FROM tblGrades  WHERE id=%s', grad_id)
     result = cursor.fetchall()
     json_result = json.dumps(result);
     resp = Response(json_result, status=200, mimetype='application/json')
@@ -126,7 +126,7 @@ def api_add() -> str:
     inputData = (content['Last_name'], content['First_name'], content['SSN'],
                  content['Test1'], content['Test2'],
                  content['Test3'], content['Test4'],content['Final'],content['Grade'])
-    sql_insert_query =  """INSERT INTO tblGrades (Last_name ,First_name ,SSN ,Test1,Test2,Test3,Test4,Final,
+    sql_insert_query =  """INSERT INTO tblGrades  (Last_name ,First_name ,SSN ,Test1,Test2,Test3,Test4,Final,
     Grade) VALUES (%s,%s,%s,%s,%s, %s , %s , %s , %s) """
     cursor.execute(sql_insert_query, inputData)
     mysql.get_db().commit()
@@ -137,7 +137,7 @@ def api_add() -> str:
 @app.route('/api/v1/grade/<int:grad_id>', methods=['DELETE'])
 def api_delete(grad_id) -> str:
     cursor = mysql.get_db().cursor()
-    sql_delete_query = """DELETE FROM tblGrades WHERE id = %s """
+    sql_delete_query = """DELETE FROM tblGrades  WHERE id = %s """
     cursor.execute(sql_delete_query, grad_id)
     mysql.get_db().commit()
     resp = Response(status=200, mimetype='application/json')

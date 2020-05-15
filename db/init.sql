@@ -3,7 +3,7 @@ use gradesData;
 
 CREATE TABLE IF NOT EXISTS tblGrades (
     `id` INT AUTO_INCREMENT,
-    `Last_name` VARCHAR(9) CHARACTER SET utf8,
+    `Last_name` VARCHAR(20) CHARACTER SET utf8,
     `First_name` VARCHAR(16) CHARACTER SET utf8,
     `SSN` VARCHAR(21) CHARACTER SET utf8,
     `Test1` VARCHAR(14) CHARACTER SET utf8,
