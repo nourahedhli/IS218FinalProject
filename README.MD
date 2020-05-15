@@ -44,15 +44,15 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 ![pycharm data query](screenshots/Post.png)
 
-#
+### Result 
 ![pycharm data query](screenshots/PostResult.png)
 
 
-## Postman Put
+## Postman Put   (Grade from A  to an F )
 
 ![pycharm data query](screenshots/Put.png)
 
-#
+### Result  (Grade from A  to an F )
 ![pycharm data query](screenshots/PutResult.png)
 
 #
@@ -61,5 +61,6 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 ![pycharm data query](screenshots/Delete.png)
 
-#
+### Result
+
 ![pycharm data query](screenshots/DeleteResult.png)
