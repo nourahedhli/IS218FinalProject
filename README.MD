@@ -2,7 +2,7 @@
 This project is a homework assignment to teach how to get Pycharm setup with Docker, Flask, MySQL, and Postman
 
 
-![postman request output](screenshots/MyPostman.png)
+
 
 ## Database Screenshot
 ![pycharm data query](screenshots/GradesQuery.png)
@@ -33,7 +33,8 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 
 # Postman ScreenShots
-#
+
+
 ## Postman Listing
 
 ![pycharm data query](screenshots/PostManListing.png)
